@@ -315,9 +315,11 @@ var bt2Str = function(byteArray,start,end) {
     };
   }
 
-  var root = window;
+//  var root = window;
+//  var pomelo = Object.create(EventEmitter.prototype); // object extend from object
+//  root.pomelo = pomelo;
   var pomelo = Object.create(EventEmitter.prototype); // object extend from object
-  root.pomelo = pomelo;
+  window.pomelo = pomelo;
   var socket = null;
   var id = 1;
   var callbacks = {};
